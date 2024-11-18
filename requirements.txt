@@ -4,3 +4,4 @@ Pillow
 opencv-python-headless
 gdown
 google-generativeai
+protobuf~=3.19.0
