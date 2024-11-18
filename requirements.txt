@@ -1,5 +1,6 @@
 pip==24.0
 tensorflow==2.10.1
+streamlit==1.40.1
 Pillow
 opencv-python-headless
 gdown
