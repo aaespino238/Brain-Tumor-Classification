@@ -32,7 +32,7 @@ def model_results(selected_models, image, file_name):
                 # Display predictions
                 st.subheader(f"Prediction Result for {model_name}")
                 st.write(f"**Class**: {predicted_class}")
-                st.write(f"**Confidence**: {prediction_confidence*100}%")
+                st.write(f"**Confidence**: {round(prediction_confidence*100,2)}%")
 
                 confidences = pd.DataFrame({"Class": labels, "Confidence": predictions})
                 st.bar_chart(confidences.set_index("Class"))
