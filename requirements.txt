@@ -1,5 +1,6 @@
-tensorflow < 2.11
-PIL
+pip==24.0
+tensorflow
+Pillow
 opencv-python
 gdown
 google-generativeai
