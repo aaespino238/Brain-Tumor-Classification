@@ -4,3 +4,4 @@ pandas
 tensorflow
 opencv-python
 gdown
+google-generativeai
