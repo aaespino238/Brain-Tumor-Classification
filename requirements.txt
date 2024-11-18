@@ -1,7 +1,4 @@
-streamlit
-numpy
-pandas
-tensorflow
+tensorflow < 2.11
 PIL
 opencv-python
 gdown
