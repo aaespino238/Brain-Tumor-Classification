@@ -5,14 +5,43 @@ from PIL import Image
 import numpy as np
 import cv2
 import tensorflow as tf
+import gdown
+import os
+
+def download_models():
+    # Create a models directory in the Streamlit environment
+    os.makedirs('models', exist_ok=True)
+
+    # Write in your Google Drive File IDs
+
+    # https://drive.google.com/file/d/1pRMGpPRSQawcdvCku--KEtGo7uc0cHiF/view?usp=drive_link
+    mini_xception_id ="1pRMGpPRSQawcdvCku--KEtGo7uc0cHiF"
+
+    # https://drive.google.com/file/d/1GFgp7REhNLhlrT5gHrZRHj8f4qPFLpNj/view?usp=drive_link
+    xception_id="1GFgp7REhNLhlrT5gHrZRHj8f4qPFLpNj"
+
+    # Create path vars for each new streamlit file
+    mini_xception_path = 'models/mini_xception_model.h5'
+    xception_path = 'models/xception_model.h5'
+
+    #Safely download each to the Streamlit Server
+    if not os.path.exists(mini_xception_path):
+        with st.spinner('Downloading CNN model ... '):
+            url = f"https://drive.google.com/uc?id={mini_xception_id}"
+            gdown. download(url, mini_xception_path, quiet=False)
+
+    if not os.path.exists(xception_path):
+        with st.spinner('Downloading Xception model ... '):
+            url = f"https://drive.google.com/uc?id={xception_id}"
+            gdown. download(url, xception_path, quiet=False)
 
 @st.cache_resource
 def load_xception():
-    return load_model("trained_models/XCEPTION.h5")
+    return load_model("models/xception_model.h5")
 
 @st.cache_resource
 def load_mini_xception():
-    return load_model("trained_models/mini_XCEPTION.h5")
+    return load_model("models/mini_xception_model.h5")
 
 def load_models(selected_models):
     models = []

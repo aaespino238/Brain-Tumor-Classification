@@ -3,7 +3,9 @@ from PIL import Image
 
 from utils.gemini_utils import validate_image
 from utils.displays import model_results
+from utils.models import download_models
 
+download_models()
 model_names = ["Transfer Learning - Xception", "Mini Xception"]
 
 st.set_page_config(layout='wide', page_title="Brain Tumor Classifier")
