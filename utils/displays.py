@@ -40,9 +40,9 @@ def model_results(selected_models, image, file_name):
                 
                 col1, col2 = st.columns(2)
                 with col1:
-                    st.image(image, caption="Uploaded Image", use_container_width=True)
+                    st.image(image, caption="Uploaded Image", use_column_width=True)
                 with col2:
-                    st.image(saliency_map, caption="Saliency Map", use_container_width=True)
+                    st.image(saliency_map, caption="Saliency Map", use_column_width=True)
 
                 with st.spinner("Interpreting saliency map..."):
                     explanation = interpret_results(model_name, file_name, saliency_map, predicted_class, prediction_confidence)
