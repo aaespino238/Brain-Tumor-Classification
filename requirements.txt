@@ -1,7 +1,6 @@
-pip==24.3.1
-tensorflow==2.10.1
+streamlit
+tensorflow-cpu
 Pillow
 opencv-python-headless
 gdown
 google-generativeai
-protobuf~=3.19.0
