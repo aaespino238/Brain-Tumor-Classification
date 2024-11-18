@@ -1,6 +1,6 @@
 pip==24.0
 tensorflow
 Pillow
-opencv-python
+opencv-python-headless
 gdown
 google-generativeai
