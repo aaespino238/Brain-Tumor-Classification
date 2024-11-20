@@ -17,6 +17,6 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
 4. **Run the Application Locally:**
    streamlit run app.py
 
-## References 
-Mini xception code was copied from https://github.com/oarriaga/face_classification/tree/master 
-
+## Training 
+- All model training related code is located is src
+- Folder structure and files were heavily inspired by https://github.com/oarriaga/face_classification/tree/master 
