@@ -16,6 +16,7 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
    ```bash
    GEMINI_API_KEY=your-gemini-api-key
 5. **Run the Application Locally:**
+   ```bash
    streamlit run app.py
 
 ## Training 
