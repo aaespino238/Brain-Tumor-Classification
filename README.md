@@ -12,8 +12,8 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
    ```bash
    pip install requirements.txt
 3. **Set Up Environment:**
-   ```bash
    Create a .env file in the root directory and configure the following variables
+   ```bash
    GEMINI_API_KEY=your-gemini-api-key
 5. **Run the Application Locally:**
    streamlit run app.py
