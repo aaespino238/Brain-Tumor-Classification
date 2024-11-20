@@ -19,7 +19,7 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
    ```bash
    streamlit run app.py
 
-## Training 
+## Additional Information
 - All model training related code is located is src
 - Folder structure and files were heavily inspired by https://github.com/oarriaga/face_classification/tree/master
 - Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
