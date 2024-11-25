@@ -39,6 +39,7 @@ model = get_model(model_name, model_parameters)
 
 # callbacks
 
+# interesting
 ###################### MINI XCEPTION ########################################################
 # trained_models_path = base_path + model_name
 # log_file_path = trained_models_path + '.log'
