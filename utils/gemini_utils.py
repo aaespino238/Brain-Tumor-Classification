@@ -2,14 +2,12 @@ import google.generativeai as genai
 import streamlit as st
 import os
 
-# Need to add support for openai api as well as implement rate limiting
-
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Function to validate whether the image is a human brain MRI scan
 @st.cache_data
-def validate_image(_image, file_name):
-    chat_model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+def validate_image(_image, file_name, chat_model="gemini-1.5-flash"):
+    chat_model = genai.GenerativeModel(model_name=chat_model)
 
     prompt = "Analyze the provided image and determine if it is a brain MRI scan. Return true if the image is a brain MRI scan and false if it is not."
     generation_config = genai.GenerationConfig(
