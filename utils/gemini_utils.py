@@ -2,6 +2,8 @@ import google.generativeai as genai
 import streamlit as st
 import os
 
+# Need to add support for openai api as well as implement rate limiting
+
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Function to validate whether the image is a human brain MRI scan
