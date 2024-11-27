@@ -6,6 +6,8 @@ from sklearn.model_selection import train_test_split
 from models.cnn import get_model
 from utils.dataset import get_class_paths
 
+# need to make adjustments to allow for easy switching between models
+
 # parameters
 batch_size = 8
 num_epochs = 5
