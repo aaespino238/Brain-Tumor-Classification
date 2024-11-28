@@ -24,7 +24,7 @@ with st.sidebar:
 
 if submit:
     if not uploaded_file:
-        st.error("Please upload a brain MRI scan.")
+        st.error("Please upload a human brain MRI scan.")
     else:
         image = Image.open(uploaded_file)
         file_name = uploaded_file.name
