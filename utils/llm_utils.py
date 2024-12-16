@@ -9,7 +9,7 @@ from utils.aisuite.client import Client
 
 client = Client()
 
-MODELS = ["openai:gpt-4o-mini", "groq:mixtral-8x7b-32768"]
+MODELS = ["google:gemini-1.5-flash", "openai:gpt-4o-mini", "groq:mixtral-8x7b-32768"]
 
 RESULT_INTERPRETATION_PROMPT = """
     You are an expert neurologist. You are tasked with explaining a sliency map of a brain

@@ -6,3 +6,4 @@ opencv-python-headless
 gdown
 groq
 openai
+google-generativeai
