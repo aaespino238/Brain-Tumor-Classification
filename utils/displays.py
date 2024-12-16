@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from utils.models import load_models, generate_saliency_map, preprocess_image
-from utils.gemini_utils import interpret_results
+from utils.llm_utils import interpret_results
 
 labels = ['Glioma', 'Meningioma', 'No tumor', 'Pituitary']
 

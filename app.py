@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-from utils.gemini_utils import validate_image
+from utils.llm_utils import validate_image
 from utils.displays import model_results
 from utils.models import download_models
 
