@@ -18,7 +18,8 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
    OPENAI_API_KEY=your-openai-api-key
    GROQ_API_KEY=your-grok-api-key
    ```
-   Support for additional models can be added by creating a proper provider file in utils/aisuite/providers/ and adding it to the MODELS list with the appropriate name in utils/llm_utils.py. Refer to https://github.com/andrewyng/aisuite for more information.
+   Support for additional models can be added by creating a proper provider file in utils/aisuite/providers/ and adding it to the MODELS list with the appropriate name in utils/llm_utils.py. 
+   - Refer to https://github.com/andrewyng/aisuite for more information.
 5. **Run the Application Locally:**
    ```bash
    streamlit run app.py
