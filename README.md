@@ -16,7 +16,7 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
    ```bash
    GEMINI_API_KEY=your-gemini-api-key
    OPENAI_API_KEY=your-openai-api-key
-   GROQ_API_KEY=your-grok-api-key
+   GROQ_API_KEY=your-groq-api-key
    ```
    Support for additional models can be added by creating a proper provider file in utils/aisuite/providers/ and adding it to the MODELS list with the appropriate name in utils/llm_utils.py. 
    - Refer to https://github.com/andrewyng/aisuite for more information.
@@ -26,7 +26,7 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
 
 ## Additional Information
 - All model training related code is located is src
-- Folder structure and files were heavily inspired by https://github.com/oarriaga/face_classification/tree/master
+- Model training code was heavily inspired by https://github.com/oarriaga/face_classification
 - Dataset: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
    - Dataset contains a number of duplicates, duplicate removal code is located in src/utils/remove_duplicates.ipynb
 
