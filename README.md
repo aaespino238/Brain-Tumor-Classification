@@ -12,9 +12,13 @@ https://brain-tumor-classification-syw4urqyf2jue5aftr43eg.streamlit.app/
    ```bash
    pip install requirements.txt
 3. **Set Up Environment:**
-   Create a .env file in the root directory and configure the following variables
+   Create a .env file in the root directory and configure one or more of the following variables
    ```bash
    GEMINI_API_KEY=your-gemini-api-key
+   OPENAI_API_KEY=your-openai-api-key
+   GROQ_API_KEY=your-grok-api-key
+   ```
+   Support for additional models can be added by creating a proper provider file in utils/aisuite/providers/ and adding it to the MODELS list in utils/llm_utils.py. Refer to https://github.com/andrewyng/aisuite/tree/main for more information.
 5. **Run the Application Locally:**
    ```bash
    streamlit run app.py
