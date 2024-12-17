@@ -6,12 +6,16 @@ from sklearn.model_selection import train_test_split
 from models.cnn import get_model
 from utils.dataset import get_class_paths
 
-# need to make adjustments to allow for easy switching between models
-
 # parameters
 batch_size = 8
 num_epochs = 5
+
+# Mini Xception 
+# image_size = (224,224)
+
+# Xception
 image_size = (299,299)
+
 input_shape = image_size + (3,)
 validation_split = 0.2
 num_classes = 4
